@@ -1,0 +1,32 @@
+---
+import { articles, absoluteLinks, siteHeader } from '../../content/articles.js';
+import '../../styles/global.css';
+export function getStaticPaths() {
+  return articles.map(article => ({ params: { slug: article.id }, props: { article } }));
+}
+const { article } = Astro.props;
+const title = article.title.replace(/<[^>]*>/g, '');
+---
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}｜金心香連・大女孩愛咪</title>
+    <link rel="icon" href="/logo.jpg" />
+  </head>
+  <body>
+    <Fragment set:html={siteHeader} />
+    <main class="article-page">
+      <a class="article-back" href={`/#${article.id}`}>← 返回手札列表</a>
+      <article>
+        <Fragment set:html={article.heading} />
+        <h1 set:html={article.title} />
+        <div class="article-cover" set:html={absoluteLinks(article.media)} />
+        <div class="article-body" set:html={absoluteLinks(article.body)} />
+      </article>
+      <a class="article-back" href={`/#${article.id}`}>← 返回手札列表</a>
+    </main>
+    <footer><p>金心香連｜大女孩愛咪</p><a href="/">回到首頁 ↑</a></footer>
+  </body>
+</html>

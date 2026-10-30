@@ -1,0 +1,21 @@
+---
+import { homepage } from '../content/articles.js';
+import '../styles/global.css';
+import journalScript from '../scripts/journal.js?raw';
+---
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>金心香連｜大女孩愛咪</title>
+    <meta name="description" content="讓金錢成為底氣，讓香氣安放自己。金心香連與大女孩愛咪，陪妳探索感官理財與生活的選擇權。" />
+    <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+  </head>
+  <body>
+    <Fragment set:html={homepage} />
+    <script is:inline set:html={journalScript}></script>
+  </body>
+</html>
+
+
