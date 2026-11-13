@@ -29,3 +29,5 @@ header{padding-top:10px;padding-bottom:10px}.brand-logo{display:block;width:220p
 .journal-pagination{display:flex;flex-wrap:wrap;gap:8px;width:100%;justify-content:center;margin:24px 0}.journal-pagination[hidden]{display:none}.journal-pagination button{min-width:44px;min-height:44px;padding:8px 13px;border:1px solid var(--line);border-radius:4px;background:transparent;color:var(--ink);cursor:pointer}.journal-pagination button[aria-current="page"]{background:var(--rose);border-color:var(--rose);color:white}.journal-pagination button:disabled{opacity:.4;cursor:default}
 
 .hero-actions{display:flex;flex-wrap:wrap;gap:10px}.hero-actions .button-secondary{background:transparent;color:var(--rose);border:1px solid #b89a80}.hero-actions .button-secondary:hover{background:#7e4250;color:#fff;border-color:#7e4250}
+
+@media(max-width:700px){.article-body .first-grade-prose{font-size:17px;line-height:1.9}.article-body .first-grade-prose p{margin:0 0 1.5em}.article-body .first-grade-prose a{display:inline-block;margin-top:.25em}}
