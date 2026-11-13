@@ -1,0 +1,1 @@
+<article data-category="life" id="first-finance-lecture-card"><img class="journal-photo family-memory-photo" src="first-lecture-1.jpg" alt="愛咪首場理財講座與學員合影" width="2048" height="1365" loading="lazy"><p class="category">講座及開課 · 2025.09.20</p><h3>我的理財講師處女秀</h3><a class="textlink" href="#first-finance-lecture">閱讀講座紀錄與現場照片 ↗</a></article>
